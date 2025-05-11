@@ -1,0 +1,11 @@
+/*
+!.gitignore
+!README.md
+.DS_Store
+
+!/wp-content
+/wp-content/*
+!/wp-content/themes
+/wp-content/themes/*
+!/wp-content/themes/LeVieuxMoulin
+/wp-content/themes/LeVieuxMoulin/public

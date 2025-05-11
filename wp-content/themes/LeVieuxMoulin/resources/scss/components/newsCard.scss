@@ -1,0 +1,72 @@
+@import "../components/cta";
+
+.newsCard {
+    position: relative;
+    transition: .2s ease-in-out;
+
+
+    &:hover {
+        transform: scale(1.1);
+
+    }
+    &:hover img {
+        transition: .2s ease-in-out;
+
+    }
+    &__img {
+        img {
+            aspect-ratio: 3 / 4;
+
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: 30px;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: 0;
+        }
+
+
+    }
+
+    &__content {
+        position: absolute;
+
+        bottom: 33px    ;
+        left: 20px;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 2em;
+        color: white;
+        transition: 2s ease-in-out;
+
+
+        &__title {
+            font-size: 1.4rem;
+            color: white;
+
+        }
+
+        &__time {
+
+            font-family: $poppins-bold;
+
+        }
+
+        &__excerpt {
+
+        }
+
+    }
+
+    &__link {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+    }
+
+}
+

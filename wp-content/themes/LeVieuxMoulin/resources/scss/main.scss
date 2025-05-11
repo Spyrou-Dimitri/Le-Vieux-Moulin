@@ -1,0 +1,16 @@
+//Import Global
+@import "global/reset";
+@import "global/fonts";
+@import "global/var";
+@import "global/global";
+
+//Import Components
+@import "components/nav.scss";
+@import "components/cta";
+@import "components/newsCard";
+
+//Import pages
+@import "pages/home";
+@import "pages/allNews";
+@import "pages/about";
+@import "pages/donation";

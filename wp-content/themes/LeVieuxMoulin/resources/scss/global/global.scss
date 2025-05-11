@@ -1,0 +1,88 @@
+.sro {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.resizeImg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+
+}
+
+a {
+    text-decoration: none;
+    font-family: $poppins-regular;
+    color: black;
+}
+h2 {
+    font-size: 2.125rem;
+    font-family: $poppins-regular;
+    line-height: 1.6;
+    @media (min-width: $medium-screen) {
+        font-size: 2.8rem;
+
+    }
+    @media(min-width: 1200px) {
+        font-size: 3.375rem;
+    }
+}
+h3 {
+    color: $darkBlue;
+    font-family: $poppins-Semibold;
+    font-size: 2em;
+
+}
+strong {
+    font-family: $poppins-Semibold;
+    color: $turquoise;
+    position: relative;
+    &:after{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        content: "";
+        background-color: $turquoise;
+        width: 100%;
+        height: 5px;
+        border-radius: 30px;
+    }
+}
+p {
+    font-family: $poppins-regular;
+    line-height: 1.6;
+
+}
+section {
+    padding: 5.4rem 4rem;
+    @media (min-width: $wide-screen) {
+
+        padding: 8rem 8rem;
+    }
+}
+.oppacity_none {
+    opacity: 0;
+}
+.showUp {
+    animation: .5s appear linear;
+
+}
+@keyframes appear {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+}
+
